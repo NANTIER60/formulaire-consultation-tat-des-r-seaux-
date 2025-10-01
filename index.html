@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)file:///C:/Users/fnantier/Downloads/formulaire_consultation_reseaux.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Formulaire de consultation de l’état des réseaux</title>
+</head>
+<body>
+    <h1>Formulaire de consultation de l’état des réseaux – Ville de Beauvais</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>1. Informations générales</legend>
+            <label>Nom de l'organisme / entreprise:</label><input type="text" name="organisme"><br>
+            <label>Nom du contact:</label><input type="text" name="contact"><br>
+            <label>Fonction:</label><input type="text" name="fonction"><br>
+            <label>Téléphone:</label><input type="text" name="telephone"><br>
+            <label>Email:</label><input type="email" name="email"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Localisation du projet</legend>
+            <label>Nom de la rue / secteur concerné:</label><input type="text" name="rue"><br>
+            <label>Commune:</label><input type="text" name="commune"><br>
+            <label>Références cadastrales:</label><input type="text" name="cadastre"><br>
+            <label>Plan de situation joint:</label><input type="file" name="plan_situation"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Réseaux concernés</legend>
+            <input type="checkbox" name="reseaux" value="Eau potable"> Eau potable<br>
+            <input type="checkbox" name="reseaux" value="Assainissement"> Assainissement<br>
+            <input type="checkbox" name="reseaux" value="Électricité"> Électricité<br>
+            <input type="checkbox" name="reseaux" value="Gaz"> Gaz<br>
+            <input type="checkbox" name="reseaux" value="Télécommunications"> Télécommunications<br>
+            <input type="checkbox" name="reseaux" value="Chauffage urbain"> Chauffage urbain<br>
+            <label>Autres:</label><input type="text" name="reseaux_autres"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>4. État des réseaux</legend>
+            <label>Présence avérée ou supposée:</label>
+            <input type="radio" name="presence" value="Oui"> Oui
+            <input type="radio" name="presence" value="Non"> Non
+            <input type="radio" name="presence" value="À confirmer"> À confirmer<br>
+            <label>Profondeur estimée:</label><input type="text" name="profondeur"><br>
+            <label>Matériaux:</label><input type="text" name="materiaux"><br>
+            <label>Date de dernière intervention:</label><input type="date" name="date_intervention"><br>
+            <label>Plans disponibles:</label><input type="file" name="plans_disponibles"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>5. Travaux prévus ou en cours</legend>
+            <label>Des travaux sont-ils prévus dans les 12 prochains mois ?</label>
+            <input type="radio" name="travaux_prevus" value="Oui"> Oui
+            <input type="radio" name="travaux_prevus" value="Non"> Non<br>
+            <label>Si oui, lesquels ?</label><input type="text" name="details_travaux"><br>
+            <label>Coordination possible avec le projet de voirie ?</label>
+            <input type="radio" name="coordination" value="Oui"> Oui
+            <input type="radio" name="coordination" value="Non"> Non
+            <input type="radio" name="coordination" value="À discuter"> À discuter<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>6. Observations complémentaires</legend>
+            <textarea name="observations" rows="4" cols="50"></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>7. Validation</legend>
+            <input type="checkbox" name="certification" value="certifie"> Je certifie que les informations fournies sont exactes à la date de réponse.<br>
+            <label>Date de réponse:</label><input type="date" name="date_reponse"><br>
+            <label>Signature (nom du répondant):</label><input type="text" name="signature"><br>
+        </fieldset>
+
+        <input type="submit" value="Envoyer">
+
+    </form>
+
+
+</body></html>
